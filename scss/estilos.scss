@@ -2,20 +2,20 @@
 @import "mixin";
 @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@1,300;1,400;1,900&display=swap');
 
-.bodyPrincipal{
-	@include bodyPrincipal(100vh);
+body{
+	@include bodyPrincipal;
 }
 .typeLato900{
 	font-weight: $font_900;
-	font-size: 5rem;
+	font-size: 5em;
 }
 .typeLato400{
 	font-weight: $font_400;
-	font-size: 3rem;
+	font-size: 3em;
 }
 .typeLato300{
 	font-weight: $font_300;
-	font-size: 2rem;
+	font-size: 2em;
 }
 /*estilos para index*/
 #mainIndex{
@@ -66,25 +66,28 @@
 /*estilos para index*/
 
 /*estilos header general*/
-#headerGeneral{
+header{
+	width: 100%;
+	height: auto;
 .navbar-brand{
 	display: flex;
 	align-items: baseline;
+	margin-right: 0;
 	}
 .navbar-brand img{
-	width: 80px;
-	height: 57px;
+	width: 100px;
+	height: 70px;
 	margin-right: 10px;
 	}
 .navbar-brand .typeLato900{
-	font-size: 4rem;
+	font-size: 4em;
 	}
 #navbarNavDropdown{
 	justify-content: flex-end;
 	}
 }
 /*estilos footer general*/
-#footer{
+footer{
 	width: 100%;
 	height: 150px;
 	display: flex;
@@ -101,13 +104,13 @@
 
 /*estilos para portfolio-dron*/
 .bodyPrincipal{
-	@include bodyPrincipal(auto);
+	@include bodyPrincipal;
 }
 .mainPrincipal{
 	@include mainPrincipal;
 }
-h2{
-	@include h2;
+.titulo{
+	@include titulo;
 }
 iframe{
 	@include iframe;
@@ -124,16 +127,16 @@ iframe{
 .seccion1{
 	@include seccion;
 	width: 100%;
-	display: flex;
-	flex-direction: row;
-	align-self: center;
-    justify-content: space-evenly;
+	height: auto;
+	padding: 1px;
     	img{
-    	width: 330px;
-		height: 490px;
-	    border-radius: 25px;
-	    box-shadow: $box-sh;
-	    margin-left: 20px;
+    	/*width: 330px;
+		height: 490px;*/
+	    /*border-radius: 50px;*/
+	   
+		}
+		video{
+			border-radius: 10px;
 		}
 	.imgSeccion1{
 	padding: 10px;
@@ -144,7 +147,9 @@ iframe{
     border-radius: 25px;
     padding: 20px;
     box-shadow: $box-sh;
-	}
+    color: #fff;
+    background-color: #000;
+    	}
 }
 .seccion2{
 	@include seccion;
@@ -353,4 +358,29 @@ iframe{
 		border-radius: 20px;
 		box-shadow: $box-sh;
 		}
+}
+@media screen and (max-width: 1200px){
+	header .navbar-brand .typeLato900 {
+	    font-size: 6vw;
+	  	}
+
+}
+@media screen and (max-width: 992px){
+	/*header .navbar-brand .typeLato900{
+		font-size: 3em;
+		}*/
+}
+
+@media screen and (max-width: 768px){
+	
+	/*header.navbar-brand.typeLato900 {
+	    font-size: 7vw;
+	  	}*/
+}
+
+@media screen and (max-width: 576px){
+	
+/*header.navbar-brand.typeLato900 {
+    font-size: 7vw;
+	}*/
 }

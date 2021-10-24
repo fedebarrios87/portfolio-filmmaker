@@ -1,33 +1,28 @@
-@mixin bodyPrincipal($height){
+@mixin bodyPrincipal{
 	font-family: $font_principal;
 	background-color: #fff;
 	color: #000;
 	width: 100%;
-	height: $height;
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
+
+	
 }
 @mixin mainPrincipal{
 	background-color: #fff;
-	width: auto;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    margin:5px 20px ;
+	height: auto;
+    margin:0px 20px ;
 }
-@mixin h2{
-	box-shadow: $box-sh;
+@mixin titulo{
     padding-left: 20px;
     border: 2px solid #000;
-    border-radius: 20px;
-    font-size: 3rem;
+    border-radius: 10px;
+    font-size: 3vw;
+    margin-top: 5px;
 }
 @mixin seccion{
-	border: 2px solid #000;
+	/*border: 2px solid #000;
     border-radius: 20px;
-    padding: 20px;
-    box-shadow: $box-sh;
+    /*padding: 20px;*/
+    /*box-shadow: $box-sh;*/
     margin-bottom: 30px;
 }
 @mixin iframe{
