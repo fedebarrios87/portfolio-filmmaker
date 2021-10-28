@@ -10,12 +10,13 @@
 	background-color: #fff;
 	height: auto;
     margin:0px 20px ;
+    width: auto;
 }
 @mixin titulo{
     padding-left: 20px;
     border: 2px solid #000;
     border-radius: 10px;
-    font-size: 3vw;
+    font-size: 2rem;
     margin-top: 5px;
 }
 @mixin seccion{

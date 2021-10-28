@@ -2,9 +2,11 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
+	<meta name="description" content="Hernan Cejas Filmmaker, creando contenido para marcas.">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
 	<link rel="stylesheet" href="css/estilos.css">
+	<link rel="icon" href="img/logoOriginal.svg">
 	<title>Portfolio - Producto</title>
 </head>
 <!--body portfolio-producto-->
@@ -23,6 +25,9 @@
 		  </button>
 		  <div class="collapse navbar-collapse" id="navbarNavDropdown">
 		    <ul class="navbar-nav">
+		    	<li class="nav-item active">
+		        <a class="nav-link" href="sobre_mi.html">Sobre mi <span class="sr-only">(current)</span></a>
+		      </li>
 		    	 <li class="nav-item dropdown">
 		        	<a class="nav-link dropdown-toggle" href="portfolio.html" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
 		          Portfolio
@@ -34,9 +39,7 @@
 		          <a class="dropdown-item" href="port_musical.html">Musical</a>
 		        </div>
 		      </li>
-		      <li class="nav-item active">
-		        <a class="nav-link" href="sobre_mi.html">Sobre mi <span class="sr-only">(current)</span></a>
-		      </li>
+		      
 		      <li class="nav-item">
 		        <a class="nav-link" href="contacto.html">Contacto</a>
 		      </li>
@@ -48,22 +51,43 @@
 	<main class="mainPrincipal">
 		<h1 class="titulo">PORTFOLIO - PRODUCTO</h1>
 		<!--primera seccion portfolio-producto-->
-		
-		<!--<div class="seccion1Pro">
-			<iframe width="280" height="500" src="https://www.youtube.com/embed/FTzPpAjvghA?autoplay=0&loop=0&rel=0&modestbranding=1&showinfo=0&controls=1&fs=0&iv_load_policy=3&yt:crop=16:9" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-			<iframe width="280" height="500" src="https://www.youtube.com/embed/q2KFTZ03lBA?autoplay=0&loop=0&rel=0&modestbranding=1&showinfo=0&controls=1&fs=0&iv_load_policy=3&yt:crop=16:9" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-			<iframe width="280" height="500" src="https://www.youtube.com/embed/aS34JMKLG-U?autoplay=0&loop=0&rel=0&modestbranding=1&showinfo=0&controls=1&fs=0&iv_load_policy=3&yt:crop=16:9" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-			<div class="txtSeccion1Pro">
-				<h3>El Fogón</h3>
-				<p>Trabajo realizado para los amigos de El Fogón, un emprendimiento joven de la ciudad de Posadas, Misiones.</p>
-			</div>
-		</div>-->
+		<section class="seccion1">
+			<div class="card-deck col-12">
+			  <div class="card-body cardBk col-12 col-sm-3 imgStyle">
+			      <h5 class="card-title">Fogón</h5>
+			      <p class="card-text">Parte del trabajo realizado para los amigos de Fogón.</p>
+			      <p>Se realizó una producción de varias semanas en varios escenarios siempre haciendo enfoque en el obejtivo del cliente.</p>	
+			      <p>Se pueden usar distintos recursos y herramientas, tanto de equipamiento como en tecnicas, para llegar a dichos objetivos.</p>		      
+			  </div>		
+			  <div class="card">
+			    <div class="embed-responsive embed-responsive-1by1"> 
+				  <video loop muted controls="1">
+				      <source src="img/productoFogonCortado.mp4" type="video/mp4">
+				   </video>
+				</div> 				
+			  </div>
+			  <div class="card">
+			    <div class="embed-responsive embed-responsive-1by1"> 
+				  <video loop muted controls="1">
+				      <source src="img/productoFogon2Cortado.mp4" type="video/mp4">
+				   </video>
+				</div>			    
+			  </div>
+			  <div class="card">
+			    <div class="embed-responsive embed-responsive-1by1"> 
+				  <video loop muted controls="2">
+				      <source src="img/productoFogon3Cortado.mp4" type="video/mp4">
+				   </video>
+				</div>			    
+			  </div>
+			</div>			
+		</section>	
 	</main>
 	<!--footer general-->
-	<footer id="footer" class="container-fluid">
-		<a href="http://www.facebook.com"><img src="img/iconoFacebook.png" alt="icono Facebook"></a>
-		<a href="http://www.instagram.com"><img src="img/iconoInstagram.png" alt="icono Instagram"></a> 
-		<a href="http://www.whatsappweb.com"><img src="img/iconoWhatsapp.png" alt="icono Whatsapp"></a>
+	<footer class="container-fluid d-flex">
+		<a href="https://www.facebook.com/hernancejasfilmaker" target="blank"><img src="img/svg_facebook.png" alt="icono Facebook"></a>
+		<a href="https://www.youtube.com" target="blank"><img src="img/svg_youtube.png" alt="icono YouTube"></a>
+		<a href="https://www.instagram.com/hernancejasfilmmaker/" target="blank"><img src="img/svg_instagram.png" alt="icono Instagram"></a> 		
 	</footer>
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>	

@@ -7,7 +7,7 @@ body{
 }
 .typeLato900{
 	font-weight: $font_900;
-	font-size: 5em;
+	font-size: 5vw;
 }
 .typeLato400{
 	font-weight: $font_400;
@@ -80,7 +80,7 @@ header{
 	margin-right: 10px;
 	}
 .navbar-brand .typeLato900{
-	font-size: 4em;
+	font-size: 5vw;
 	}
 #navbarNavDropdown{
 	justify-content: flex-end;
@@ -95,6 +95,9 @@ footer{
 	flex-wrap: wrap;
 	justify-content: center;
 	align-items: center;
+	a:hover{
+		transform: scale(1.2);
+	}
 		img{
 			width: 70px;
 			height: auto;
@@ -108,6 +111,12 @@ footer{
 }
 .mainPrincipal{
 	@include mainPrincipal;
+	form{
+	border: 1px solid;
+	border-radius: 10px;
+	box-shadow: $box-sh;
+	padding: 20px;
+}
 }
 .titulo{
 	@include titulo;
@@ -115,11 +124,18 @@ footer{
 iframe{
 	@include iframe;
 }
+.imgStyle{
+	border-radius:10px;
+	box-shadow:$box-sh;
+}
 .flechaArriba{
 	display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    a:hover{
+		transform: scale(1.2);
+	}
     	img{
     		width: 50px;
     	}
@@ -129,218 +145,38 @@ iframe{
 	width: 100%;
 	height: auto;
 	padding: 1px;
-    	img{
-    	/*width: 330px;
-		height: 490px;*/
-	    /*border-radius: 50px;*/
-	   
-		}
 		video{
 			border-radius: 10px;
 		}
 	.imgSeccion1{
 	padding: 10px;
 	}
-.txtSeccion1{
-	width: 360px;
-    align-self: center;
-    border-radius: 25px;
-    padding: 20px;
-    box-shadow: $box-sh;
-    color: #fff;
-    background-color: #000;
-    	}
-}
-.seccion2{
-	@include seccion;
-	width: 100%;
-	height: 550px;
-	display: flex;
-	flex-direction: row;
-	align-self: center;
-    justify-content: center;
-    	.seccion2a{
-		display: flex;
-		flex-direction: row;
-			iframe{
-			height: 100%;
-		    margin: 0 20px;
-			}
-			.txtSeccion2a{
-			width: 360px;
-		    align-self: center;		    
-		    border-radius: 25px;
-		    padding: 20px;
-		    box-shadow: $box-sh;
-		    text-align: center;
-			}
-}
-		.seccion2b{
-		display: flex;
-		flex-direction: row;
-			iframe{
-			height: 100%;
-		    margin: 0 20px;
-			}
-			.txtSeccion2b{
-			width: 360px;
-		    align-self: center;
-		    border-radius: 25px;
-		    padding: 20px;
-		    box-shadow: $box-sh;
-		    text-align: center;
-			}
-}
-}
-.seccion3{
-	@include seccion;
-	width: 100%;
-    height: 550px;
-    padding: 30px;
-    display: flex;
-    flex-direction: row;
-    align-self: center;
-    justify-content: center;
-    	iframe{
-		width: 77%;
-		height: auto;
-		margin-right: 20px;
-		}
-		.txtSeccion3{
-		width: 360px;
-	    align-self: center;	    
-	    border-radius: 25px;
-	    padding: 20px;
-	    box-shadow: $box-sh;
-	    text-align: center;
-		}
-}
-/*estilos para portfolio-paisaje*/
-.seccion1Pai{
-	@include seccion;
-		img{
-		width: 100%;
-	    border-radius: 25px;
-	    box-shadow: $box-sh;
-		}
-} 
-.seccion2Pai{
-	@include seccion;
-	display: flex;
-	flex-direction: row;
-	justify-content: space-around;
-		iframe{
-		width: 64%;
-		height: 500px;
-		}
-		.txtSeccion2Pai{
-		width: 360px;
-	    align-self: center;	    
-	    border-radius: 25px;
-	    padding: 20px;
-	    box-shadow: $box-sh;
-		}
-}
-.seccion3Pai{
-	@include seccion;
-	display: flex;
-	flex-direction: row;
-	justify-content: space-around;
-		iframe{
-		width: 64%;
-		height: 500px;
-		}
-		.txtSeccion3Pai{
-		width: 360px;
-	    align-self: center;	    
-	    border-radius: 25px;
-	    padding: 20px;
-	    box-shadow: $box-sh;
-		}
-}
-/*estilos para portfolio-producto*/
-.seccion1Pro{
-	@include seccion;
-	width: 100%;
-	height: auto;
-	display: flex;
-	flex-direction: row;
-	justify-content: space-around;
-		.txtSeccion1Pro{
-		width: 360px;
-	    align-self: center;	    
-	    border-radius: 25px;
-	    padding: 20px;
-	    box-shadow: $box-sh;
-		}
-}
-/*estilos para portfolio-musical*/
-.seccion1Mus{
-	@include seccion;
-	width: 100%;
-	height: auto;
-	display: flex;
-	flex-direction: row;
-	justify-content: space-evenly;
-	padding: 20px;
-		#carouselExampleFade{
-		width: 610px;
-		height: 610px;
+.card{
+	border: none;
+	a:hover{
+		transform: scale(1.2);
+	}
+	.card-body{
+		border: 1px solid;
+		border-radius: 10px;
+		margin: 20px 0px;
 		box-shadow: $box-sh;
-	    border-radius: 30px;
-		}	
-		img{
-			border-radius: 25px;
-		}
+	}
 }
-.txtSeccion1Mus{
-	width: 360px;
-    align-self: center;    
-    border-radius: 25px;
-    padding: 20px;
-    box-shadow: $box-sh;
+.cardBk{
+	color: #fff;
+	background-color: #000;
 }
-.seccion2Mus{
-	@include seccion;
-	display: flex;
-	flex-direction: row;
-	justify-content: space-evenly;
-		.txtSeccion2Mus{
-		width: 360px;
-	    align-self: center;	    
-	    border-radius: 25px;
-	    padding: 20px;
-	    box-shadow: $box-sh;
-		}
+.card-body.cardNoMargin{
+	margin-top: 0px;
 }
-/*estilos para sobre_mi*/
-.seccion1Sob{
-	@include seccion;
-	width: 100%;
-	height: auto;
-	display: flex;
-	flex-direction: row;
-	justify-content: space-evenly;
-	padding: 20px;
-		.carouselSobreMi{
-		width: 60%;
-	    align-self: center;
-	    padding: 10px;
-	    border-radius: 25px;
-		}
-		.txtSeccion1Sob{
-		width: 360px;
-	    align-self: center;	    
-	    border-radius: 25px;
-	    padding: 20px;
-	    box-shadow: $box-sh;
-		}
-		.carousel-inner{
-		border-radius: 25px;
-		}
+.img-fluid {
+    max-width: 20%;
+    height: auto;
 }
 /*estilos para formulario*/
-.formulario{
+
+/*.formulario{
 	@include seccion;
 	display: flex;
 	flex-direction: row;
@@ -358,10 +194,10 @@ iframe{
 		border-radius: 20px;
 		box-shadow: $box-sh;
 		}
-}
+}*/
 @media screen and (max-width: 1200px){
 	header .navbar-brand .typeLato900 {
-	    font-size: 6vw;
+	    font-size: 5vw;
 	  	}
 
 }
@@ -374,7 +210,7 @@ iframe{
 @media screen and (max-width: 768px){
 	
 	/*header.navbar-brand.typeLato900 {
-	    font-size: 7vw;
+	    font-size: 3em;
 	  	}*/
 }
 
@@ -383,4 +219,5 @@ iframe{
 /*header.navbar-brand.typeLato900 {
     font-size: 7vw;
 	}*/
+}
 }

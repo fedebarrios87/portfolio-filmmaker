@@ -2,15 +2,17 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
+	<meta name="description" content="Hernan Cejas Filmmaker portfolio musical.">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
 	<link rel="stylesheet" href="css/estilos.css">
+	<link rel="icon" href="img/logoOriginal.svg">
 	<title>Portfolio - Musical</title>
 </head>
 <!--body portfolio-musical-->
 <body class="bodyPrincipal">
 	<!--header general-->
-	<header>
+	<header id="arriba">
 		<nav class="navbar navbar-expand-md navbar-light bg-white flex-row justify-content-evenly flex-md-column container-fluid">
 		  <a class="navbar-brand flex-wrap flex-lg-nowrap" href="index.html">
 		  	<img class="col-md-12 col-sm-12 col-12 col-lg" src="img/logoOriginal.svg" alt="logo camara">
@@ -23,6 +25,9 @@
 		  </button>
 		  <div class="collapse navbar-collapse" id="navbarNavDropdown">
 		    <ul class="navbar-nav">
+		    	<li class="nav-item active">
+		        <a class="nav-link" href="sobre_mi.html">Sobre mi <span class="sr-only">(current)</span></a>
+		      </li>
 		    	 <li class="nav-item dropdown">
 		        	<a class="nav-link dropdown-toggle" href="portfolio.html" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
 		          Portfolio
@@ -34,9 +39,7 @@
 		          <a class="dropdown-item" href="port_musical.html">Musical</a>
 		        </div>
 		      </li>
-		      <li class="nav-item active">
-		        <a class="nav-link" href="sobre_mi.html">Sobre mi <span class="sr-only">(current)</span></a>
-		      </li>
+		      
 		      <li class="nav-item">
 		        <a class="nav-link" href="contacto.html">Contacto</a>
 		      </li>
@@ -58,10 +61,10 @@
 				  </ol>
 				  <div class="carousel-inner">
 				    <div class="carousel-item active">
-				      <img src="img/fotoHernanCejas2.jpg" class="d-block w-100" alt="...">
+				      <img src="img/fotoHernanCejas2.jpg" class="d-block w-100" alt="foto tocando el piano">
 				    </div>
 				    <div class="carousel-item">
-				      <img src="img/fotoHernanCejas.jpg" class="d-block w-100" alt="...">
+				      <img src="img/fotoHernanCejas.jpg" class="d-block w-100" alt="foto tocando el piano">
 				    </div>
 				  </div>
 				  <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
@@ -74,8 +77,14 @@
 				  </a>
 				</div>
 			    <div class="card-body">
-			      <h5 class="card-title">Card title that wraps to a new line</h5>
-			      <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+			      <h5 class="card-title">Mi pasión de origen</h5>
+			      <p class="card-text">La música me ha acompañado, sin exagerar, toda mi vida.</p>
+			    </div>
+			    <div class="card-body cardBk">			      
+			      <p class="card-text">En el camino he tenido la posibilidad de ganar varias competencias y festivales,  entre ellas Cosquin como solista instrumental en piano en el año 2015.</p>
+			    </div>
+			    <div class="card-body">			     
+			      <p class="card-text">Pero lo que realmente me queda y me acompaña hasta el día de hoy son todas las personas que la música me ha dado la posibilidad de conocer y compartir escenarios.</p>
 			    </div>
 			  </div>
 			  <div class="card">
@@ -84,9 +93,9 @@
 				        <source src="img/musicalSoleCortado.mp4" type="video/mp4">
 				    </video>
 				</div> 		
-			    <div class="card-body">
-			      <h5 class="card-title">Card title that wraps to a new line</h5>
-			      <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+			    <div class="card-body cardBk">
+			      <h5 class="card-title">La Sole</h5>
+			      <p class="card-text">Producción para La Sole en lo que fue su primera presentación en pandemia.</p>
 			    </div>
 			  </div>
 			  <div class="card">
@@ -95,27 +104,19 @@
 				        <source src="img/musical1Cortado.mp4" type="video/mp4">
 				    </video>
 				</div> 		
-			    <div class="card-body">
-			      <h5 class="card-title">Card title</h5>
-			      <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
-			      <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-			    </div>
+			    
 			  </div>
-			  <div class="card bg-primary text-white text-center p-3">
+			  <div class="card bg-primary text-white text-center p-3 imgStyle">
 			    <blockquote class="blockquote mb-0">
-			      <p>A well-known quote, contained in a blockquote element.</p>
-			      <footer class="blockquote-footer text-white">
-			        <small>
-			          Someone famous in <cite title="Source Title">Source Title</cite>
-			        </small>
-			      </footer>
+			      <p>Para mucho más contenido buscame en facebook.</p>
+			      <a href="https://www.facebook.com/hernancejasfilmaker" target="blank">
+			      <img class="img-fluid" src="img/svg_facebook.png" alt=""></a>		      
 			    </blockquote>
 			  </div>
 			  <div class="card text-center">
-			    <div class="card-body">
-			      <h5 class="card-title">Card title</h5>
-			      <p class="card-text">This card has a regular title and short paragraphy of text below it.</p>
-			      <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+			    <div class="card-body cardBk">
+			      <h5 class="card-title">Producciones musicales</h5>
+			      <p class="card-text">Juntos podemos crear el contenido que más se adapte a lo que vos quieras como artista.</p>
 			    </div>
 			  </div>
 			  <div class="card">
@@ -124,17 +125,7 @@
 				        <source src="img/musical3Cortado.mp4" type="video/mp4">
 				    </video>
 				</div> 		
-			  </div>
-			  <div class="card p-3 text-right">
-			    <blockquote class="blockquote mb-0">
-			      <p>A well-known quote, contained in a blockquote element.</p>
-			      <footer class="blockquote-footer">
-			        <small class="text-muted">
-			          Someone famous in <cite title="Source Title">Source Title</cite>
-			        </small>
-			      </footer>
-			    </blockquote>
-			  </div>
+			  </div>			
 			  <div class="card">
 			    <div class="embed-responsive embed-responsive-16by9"> 
 				    <video loop muted controls="1">
@@ -143,60 +134,19 @@
 				</div> 		
 			  </div>
 			</div>			
-		</section>
-		
-		<!--<div class="seccion1Mus">
-			<div id="carouselExampleFade" class="carousel slide carousel-fade" data-ride="carousel">
-			  <div class="carousel-inner">
-			    <div class="carousel-item active">
-			      <img src="img/fotoHernanCejas2.jpg" class="d-block w-100" alt="Foto tocando el piano">
-			    </div>
-			    <div class="carousel-item">
-			      <img src="img/fotoHernanCejas.jpg" class="d-block w-100" alt="Foto tocando el piano">
-			    </div>
-			  </div>
-			  <a class="carousel-control-prev" href="#carouselExampleFade" role="button" data-slide="prev">
-			    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-			    <span class="sr-only">Previous</span>
-			  </a>
-			  <a class="carousel-control-next" href="#carouselExampleFade" role="button" data-slide="next">
-			    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-			    <span class="sr-only">Next</span>
-			  </a>
-			</div>
-			<div class="txtSeccion1Mus">
-				<h3>Mi otra pasión</h3>
-				<p>La música me ha acompañado, sin exagerar, toda mi vida.</p>
-				<p>Cualquier expresion artistica es hermosa y sumamente valorada, tanto por quien la reproduce como, obviamente, por quien tiene el placer de disfrutarla.</p>
-			</div>
-		</div>-->
-		<!--segunda seccion portfolio-muscial-->
-		<!--<div class="seccion2Mus">
-			<iframe width="281" height="500" src="https://www.youtube.com/embed/VtY23g1hKts?autoplay=0&loop=0&rel=0&modestbranding=1&showinfo=0&controls=1&fs=0&iv_load_policy=3&yt:crop=16:9"frameborder="0" allowfullscreen></iframe>
-			<div class="txtSeccion2Mus">
-				<h3>La Sole</h3>
-				<p>Breve resumen de lo que fue el trabajo para Auto Show Buenos Aires. Excelente equipo, mejores personas y sobre todo junto a una artista increible.</p>
-			</div>
-			<iframe width="281" height="500" src="https://www.youtube.com/embed/-PfaBTVgl-0?autoplay=0&loop=0&rel=0&modestbranding=1&showinfo=0&controls=1&fs=0&iv_load_policy=3&yt:crop=16:9"frameborder="0" allowfullscreen></iframe>
-			<div class="txtSeccion2Mus">
-				<h3>Haciendo lo mio</h3>
-				<p>Pequeña edición interpretando Zamba de Vargas. Una hermosa canción.</p>
-			</div>
-		</div>
+		</section>		
 		<div class="flechaArriba">
-				<a href="#headerGeneral">
+			<a href="#arriba">
 				<img src="img/flechaArriba.png" alt="flecha arriba">
-				</a>
-				<p>IR ARRIBA</p>
-		</div>-->
-
-		
+			</a>
+			<p>IR ARRIBA</p>
+		</div>		
 	</main>
 	<!--footer general-->
-	<footer id="footer" class="container-fluid">
-		<a href="http://www.facebook.com"><img src="img/iconoFacebook.png" alt="icono Facebook"></a>
-		<a href="http://www.instagram.com"><img src="img/iconoInstagram.png" alt="icono Instagram"></a> 
-		<a href="http://www.whatsappweb.com"><img src="img/iconoWhatsapp.png" alt="icono Whatsapp"></a>
+	<footer class="container-fluid d-flex">
+		<a href="https://www.facebook.com/hernancejasfilmaker" target="blank"><img src="img/svg_facebook.png" alt="icono Facebook"></a>
+		<a href="https://www.youtube.com" target="blank"><img src="img/svg_youtube.png" alt="icono YouTube"></a>
+		<a href="https://www.instagram.com/hernancejasfilmmaker/" target="blank"><img src="img/svg_instagram.png" alt="icono Instagram"></a> 		
 	</footer>
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>	
